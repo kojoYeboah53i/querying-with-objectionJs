@@ -7,19 +7,22 @@ async function main () {
         // delete all the customers
             // await Customer.query().delete();
         // delete all the orders
-            await Order.query().delete();
+            // await Order.query().delete();
 
 
     // create a new customer    
         const customer = await Customer.query().insert({
-            name: 'Lil Wayne',
+            name: 'Isaac Yeboah',
             email: 'wayne@mail.com'
         });
 
      
         // read all the customers
-        // const customersRead = await Customer.query();
-        // console.log(customersRead);
+        const customersRead = await Customer.query();
+        console.log(customersRead);
+
+/*
+
 
     //   add an order for this customer
        const order = await Customer.relatedQuery('order')
@@ -37,7 +40,7 @@ async function main () {
         console.log("total orders", totalOrders);
      
     
- 
+ */
     
     // //read all the orders
     // const ordersRead = await Order.query();
