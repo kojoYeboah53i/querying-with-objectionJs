@@ -1,6 +1,7 @@
 //connects to an sqlite database
 
-const sqlite3 = require('sqlite3').verbose();
+
+
 
 const db = new sqlite3.Database('./util/sql.db', (err) => {
     if (err) {
@@ -109,9 +110,12 @@ const deleteCustomers = () => {
 //close db connection   
 
 async function main () {
-    //create customer
-    const customer = await createCustomer('Isaac Yeboah', 'yeboah@mail.com');
-    console.log("customer created... as  ", customer);
+  //create customer
+    const customer = await createCustomer('Evans Yeboah', 'evans@mail.com');
+    console.log(customer);
+
+
+    
 }
 
 main();

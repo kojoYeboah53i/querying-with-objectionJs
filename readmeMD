@@ -1,3 +1,8 @@
 ## install packages
 
 ## connect to mysql database
+
+
+## npx knex init
+
+- npx knex migrate:make init 
